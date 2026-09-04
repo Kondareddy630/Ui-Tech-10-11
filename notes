@@ -1,0 +1,31 @@
+Html Tags
+------------------
+
+<h1> => create the main/big heading
+<h2> => create the second level heading
+<h3> => create the third level heading
+<h4> => create the fourth level heading
+<h5> => create the fifth level heading
+<h6> => create the sixth level heading
+<p> => create the the paragraphs
+
+<b> => make the bold text
+<i> => make the italic text
+<u> => draw the underline below of the text
+<strike> => cancel the text
+<mark>=> highlight the text with yellow color
+
+<sup> => used to move the text base line above
+                  or
+        any text is covert into power.
+
+<sub> => used to move the text base line below
+                  or
+        any text is covert into base.
+
+<pre> => used to display the information
+    on a webpage as it is how you written
+<code> =>The code element represents a fragment of computer code.
+<var>=>The var element represents a variable.
+
+
