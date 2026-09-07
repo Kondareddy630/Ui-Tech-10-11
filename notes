@@ -25,7 +25,34 @@ Html Tags
 
 <pre> => used to display the information
     on a webpage as it is how you written
+
 <code> =>The code element represents a fragment of computer code.
+
 <var>=>The var element represents a variable.
+
+<font>=> used to change textcolor,textsize,textlook
+
+
+<br>=> used to break the text or line. it is  a unpair tag.
+
+<img> => used to add the images on a webpage.it is  a unpair tag.
+
+it comes multiple attributes
+-------------------------------
+src="image path"
+width="set the image width"
+height="set the image height"
+border="set the image height"
+alt="set the alternate the if image not found" (FAQ)
+
+<marquee> => html marquee tag used to scroll the text or images
+on a webpage.by default scroll the text on a webpage right to left.(FAQ)
+
+it comes multiple attributes
+-------------------------------
+bgcolor="set the background color"
+behavior="change the behavior . by default behavior is scroll"
+behavior="scroll(default)| alternate |slide"
+
 
 
