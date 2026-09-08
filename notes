@@ -54,5 +54,37 @@ bgcolor="set the background color"
 behavior="change the behavior . by default behavior is scroll"
 behavior="scroll(default)| alternate |slide"
 
+direction="change the direction"
+direction="left(scroll),right,up,down "
+scrollamount="control the speed of the text"
+
+
+Html List Tags
+-------------------
+html List  tags are divided into three types
+
+
+1.ordered List
+2.unodered List
+3.define List
+
+
+1.ordered List
+----------------
+html ordered list used to keep the related items along with numbers
+in order.
+it is define with <ol> tag.
+<ol> comes with child tag , that is <li> tag for keep the content or text.
+
+
+ordered List comes with attributes
+--------------------------------------
+
+type="change the number format to other format"
+
+type="a or A or I or i"
+
+start="you can start the list with any number"
+start="96 or 101 or 74"
 
 
