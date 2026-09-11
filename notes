@@ -71,8 +71,7 @@ html List  tags are divided into three types
 
 1.ordered List
 ----------------
-html ordered list used to keep the related items along with numbers
-in order.
+html ordered list used to keep the related items in order along with numbers.
 it is define with <ol> tag.
 <ol> comes with child tag , that is <li> tag for keep the content or text.
 
@@ -88,3 +87,23 @@ start="you can start the list with any number"
 start="96 or 101 or 74"
 
 
+
+1.unordered List
+----------------
+html unordered list used to keep the related items in order along bullets.
+it is define with <ul> tag.
+<ul> comes with child tag , that is <li> tag for keep the content or text.
+
+
+unordered List comes with attributes
+--------------------------------------
+
+type="disc or circle or square"
+
+Define List-
+----------------
+Define List used to define the title and their description.
+you want define the title you have use <dt> tag.
+you want define the description you have <dd> tag.
+togeather all titles inside <dl> tag
+    
