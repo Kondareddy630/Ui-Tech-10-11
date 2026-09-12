@@ -107,3 +107,21 @@ you want define the title you have use <dt> tag.
 you want define the description you have <dd> tag.
 togeather all titles inside <dl> tag
     
+Html Tables
+------------------
+html tables are used to arrange the data on a webpage rows and
+columns you have use tables.
+you want create the table html provide group of tags.
+
+<table> => create table
+
+<thead> => keep heading rows
+
+<tbody> => keep data rows
+
+<tr> => create table row
+
+<th> => create heading cell
+    
+<td> =>create data cell
+
