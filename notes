@@ -125,3 +125,44 @@ you want create the table html provide group of tags.
     
 <td> =>create data cell
 
+
+Table comes with attributes
+--------------------------------------
+
+colspan="merge the columns"
+rowspan="merge the rows"
+border="apply the borders"
+border="1" enable borders
+border="0" disable boders(default)
+cellspacing="change the space between two cells "
+cellpadding="change the space between border and content"
+bgcolor="set the background color"
+align="align the table center"
+width="set the width"
+
+Html entities
+-------------------------------
+
+html entities are used to add the special symbols on a webpage.
+ex: copyright,currency,trademarks ......
+
+Details & Summary Tags:=-
+-------------------------------
+details & summary Tags used create the collapsble(hide/show)
+content on a webpage.
+<details> => used to create the collapseble button.
+<summary> => used to change the title of collapsble button.
+
+
+<fieldset> & <legend> Tags:-
+-------------------------------
+<fieldset> tag used to apply the border around group of elements.
+<legend> used to define the title for border.
+
+<div> tag
+-------------------
+<div> is a container.
+used to group the related elements for apply the styles.
+
+note: you want apply the styles on group of element/s you should go with <div>
+    
