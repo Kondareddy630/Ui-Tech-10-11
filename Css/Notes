@@ -1,0 +1,58 @@
+
+    
+1. Css stands cascading style sheet
+2. It was developed and maintain by w3c org released in 1996 year.
+3. by using css you can design and style the webpages.
+4. you want working with css no need any special software.
+5. html contains tags , like that css provide properties
+   using these properties we are deisgn the webpages.
+
+6.css extension is .css
+
+7.css current is version  css3.
+
+What css syntax?
+==========================
+
+selector{
+
+        property:value;
+        property:value;
+        property:value;
+
+}
+
+css selectors are used to select the html element for styling.
+css provide number of selectors for select the element.
+they divided into five categories
+
+1. simple selectors
+2. combinator selectors
+3. pseudo element selectors
+4. pseudo class selectors
+5. attribute selectors
+
+
+simple selectors: simple selectors means select the element
+based on their id,name,class
+                
+Declartion
+---------------
+css declaration includes css property and value separated by colon(:).
+more than one declartion is there  separated semi colon(;)
+one or more then declaration is  there wrapped in curly braces.{
+}
+
+
+How many write the css code?(FAQ)
+------------------------------------
+you can write the css code three ways
+1.inline css
+2.internal css
+3.externale css
+
+inline css means write the css code inside html element
+uisng style attribute called as inline css.
+
+
+
