@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+    *{
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+.container{
+
+    width: 500px;
+    height: 250px;
+    box-shadow: 0px 0px 4px black;
+    background-color: rgb(228, 225, 225);
+    margin: 40px auto;
+    border-radius: 12px;
+
+    position: relative;
+
+  
+    
+}
+
+.container img{
+    width:inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+
+
+.container .content2{
+
+    background-color: rgba(255,0,0,0.5);
+    color:white;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    transform-origin: center right;
+      transform: perspective(100px) rotateY(-90deg);
+       transition:  all linear 1s;
+}
+
+.container .content1{
+
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    left:0x;
+    top:0px;
+    transform-origin: center left;
+      transform: perspective(100px) rotateY(90deg);
+       transition:  all linear 1s;
+}
+
+.container:hover .content1{
+     transform: perspective(100px) rotateY(0deg);
+     transition:  all linear 1s;
+}
+.container:hover .content2{
+     transform: perspective(100px) rotateY(-0deg);
+     transition:  all linear 1s;
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="container">
+    <img src="../images/food10.jpg">
+
+    <div class="content1">
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi aperiam error unde labore ab praesentium quis aliquid, corporis ipsum, excepturi blanditiis, dolores possimus eum quae. Illum quia ea delectus ipsam!</p>
+    </div>
+
+
+     <div class="content2">
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi aperiam error unde labore ab praesentium quis aliquid, corporis ipsum, excepturi blanditiis, dolores possimus eum quae. Illum quia ea delectus ipsam!</p>
+    </div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
