@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    animation: hello infinite 1s;
+
+}
+
+
+@keyframes hello{
+
+    from{color:red;font-size: 20px;}
+    to{color:blue;font-size: 50px;}
+
+}
+
+img{
+width: 200px;
+height: 200px;
+margin: 100px;
+border-radius: 50%;
+animation: rotate infinite 1s linear;
+}
+
+@keyframes rotate{
+
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+div{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+div span{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+    animation: dance infinite linear 5s;
+    display: inline-block;
+    width: 40px;
+    transform-origin: top right;
+ 
+    
+}
+
+div span:nth-child(1){
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    background: linear-gradient(45deg,blue,red);
+    color:white;
+    padding: 5px;
+
+    animation-delay: 0.5s;
+  
+    
+}
+
+div span:nth-child(2){
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    background: linear-gradient(45deg,green,purple);
+    color:white;
+    padding: 5px;
+     animation-delay: 0.8s;
+    
+}
+
+div span:nth-child(3){
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    background: linear-gradient(45deg,black,cyan);
+    color:white;
+    padding: 5px;
+     animation-delay: 1s;
+}
+
+div span:nth-child(4){
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    background: linear-gradient(45deg,gold,darkblue);
+    color:white;
+    padding: 5px;
+     animation-delay: 1.2s;
+  
+    
+}
+
+div span:nth-child(5){
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    background: linear-gradient(45deg,purple,black);
+    color:white;
+    padding: 5px;
+     animation-delay: 1.5s;
+    
+}
+
+@keyframes dance{
+    0%,100%{transform: translateY(-20px) rotate(0deg)}
+    50%{transform: translateY(20px) rotate(360deg)}
+}
+
+    </style>
+</head>
+
+<body>
+
+
+<div>
+    <span>H</span>
+    <span>E</span>
+    <span>L</span>
+    <span>L</span>
+    <span>O</span>
+</div>
+
+<!-- 
+<h1>Java Full Stack</h1>
+
+
+
+<img src="../images/food10.jpg"> -->
+
+
+
+
+</body>
+</html>
