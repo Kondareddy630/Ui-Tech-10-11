@@ -21,13 +21,56 @@ Bootstrap
 
 How to integrate the bootstrap to html page
 ----------------------------------------------
-1.online
+1.online:
+go to bootstrap officail website go cdn links
+
 2.offline
 
 
 
 
 
+🎨 1. Text Color Classes
+-------------------------------
+Class	Meaning	Typical color
+---------------------------------------
+text-primary	 Primary theme color	            🔵 Blue
+text-secondary	Secondary theme color	            ⚪ Gray
+text-success	Success/positive message	        🟢 Green
+text-danger	    Error/danger message	            🔴 Red
+text-warning	Warning message	                    🟡 Yellow
+text-info	Informational text	                    🔵 Light blue
+text-dark	Dark-colored text	                    ⚫ Dark
+text-light	Light-colored text	                    ◻️ Light gray
+text-white	White text	                            ⚪ White
+
+
+📍 2. Text Alignment Classes
+--------------------------------------
+Class	Meaning
+-------------------------------------
+text-start	Align text to the start
+text-center	Align text to the center
+text-end	Align text to the end
+
+
+
+3. Text Transformation Classes
+----------------------------------------
+Class	Meaning	Example
+-------------------------------------------------
+text-uppercase	Converts text to uppercase	HELLO
+text-lowercase	Converts text to lowercase	hello
+text-capitalize	Capitalizes first letter of each word	Hello World
+
+
+4. Text Decoration Classes
+-----------------------------------------
+Class	Meaning
+---------------------------------------------
+text-decoration-none	        Removes text decoration
+text-decoration-underline	    Adds underline
+text-decoration-line-through	Adds line through text
 
 
 
