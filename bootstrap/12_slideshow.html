@@ -20,7 +20,22 @@ body{
 margin-bottom: 500px;
 }
 
+.carousel-indicators button {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+}
+.carousel-indicators  .active{
 
+    background-color: red;
+}
+
+.text-success{
+    color:lime !important;
+}
+.bg-danger{
+    background:rgb(231, 102, 102) !important;
+}
 </style>
 
 
@@ -29,33 +44,53 @@ margin-bottom: 500px;
 
 
 
+    
+    <h1 class="text-center display-1 fw-bold text-success bg-danger ">Java Full Stack</h1>
 
 <div class="container mt-5">
 
 
-    <div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel slide" data-bs-ride="carousel" id="hello">
+
+
+
+        <div class="carousel-indicators">
+
+            <button data-bs-target="#hello" class="active" data-bs-slide-to="0"></button>
+            <button data-bs-target="#hello" data-bs-slide-to="1"></button>
+            <button data-bs-target="#hello" data-bs-slide-to="2"></button>
+
+        </div>
+
+
 
 
         <div class="carousel-inner rounded-3 shadow">
-
-
-            
+          
         <div class="carousel-item active" data-bs-interval="1000">
             <img src="../images/slider_one.jpg" class="w-100 d-block">
         </div>
 
-
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="2000">
             <img src="../images/slider_two.jpg" class="w-100 d-block">
         </div>
 
-        <div class="carousel-item"data-bs-interval="1000">
+        <div class="carousel-item"data-bs-interval="4000">
             <img src="../images/slider_three.jpg" class="w-100 d-block">
         </div>
 
-
         </div>
 
+
+
+        <button class="carousel-control-next">
+            <span class="carousel-control-next-icon" data-bs-target="#hello" data-bs-slide="next"></span>
+        </button>
+
+
+          <button class="carousel-control-prev">
+            <span class="carousel-control-prev-icon" data-bs-target="#hello" data-bs-slide="prev"></span>
+        </button>
 
 
 
