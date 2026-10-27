@@ -1,0 +1,90 @@
+JavaScript Notes for Students
+-------------------------------------------------
+
+1. JavaScript is a web programming language.
+2. JavaScript is used to add functionality , interactivity to a webpage.
+3. JavaScript was developed by Brendan Eich and released in 1995.
+History:
+Mocha → LiveScript → JavaScript → ECMAScript (ES)
+
+4. JavaScript is a case-sensitive language.
+
+
+Example: a and A are different.
+
+5. No special software is required to start learning JavaScript. A text editor and a web browser are sufficient.
+   - Chrome → V8
+   - Firefox → SpiderMonkey
+   - Internet Explorer → Chakra
+6. JavaScript is used in different environments.
+
+   a) Client-side (browser)
+
+   b) Server-side (Node.js)
+
+   c) Database-related environments (MongoDB)
+
+7. The JavaScript file extension is .js.
+
+
+ Uses of Client-Side JavaScript
+ ----------------------------------
+ 
+1. To validate forms before submission.
+2. To add content dynamically to a webpage.
+3. To perform calculations on a webpage.
+4. To fetch data from APIs.
+5. To add functionality to a webpage.
+6. To respond to user actions.
+7. To implement searching and filtering.
+8. To show and hide webpage elements.
+
+
+How many ways write the js code
+--------------------------------------
+JavaScript code can be written in 3 ways.
+
+1. Inline JavaScript
+Writing JavaScript code directly inside an HTML element using an event attribute.
+
+<button class="btn btn-success" onclick="alert('hello js')">Click</button>
+
+2. Internal JavaScript
+Writing JavaScript inside the <script> tag in the same HTML file.
+
+3. External JavaScript
+Writing JavaScript in a separate .js file and connecting it to the HTML file.
+
+Which is best place for connect external js file head or body?
+---------------------------------------------------------------
+
+
+The best place to connect an external JavaScript file is usually inside the <head> tag using the defer attribute.
+<script src="script.js" defer></script>
+
+1.src="script.js" connects the external JavaScript file.
+
+2.defer downloads the JavaScript file while HTML is being parsed and executes it after HTML parsing is complete.
+
+3.This allows your JavaScript to access HTML elements safely.
+
+
+<script src="script.js"></script>
+This also works because the HTML elements are parsed before the browser executes the js script.
+
+Difference                  Location	Recommended usage
+--------------------------------------------------------------------
+
+<head>                        with defer	Best general choice for external scripts
+Before </body>	               Also a good choice for traditional scripts
+<head>                        without defer	May delay HTML parsing
+
+
+Notes
+---------
+<noscript> Tag
+1. The <noscript> tag displays a message on a webpage when JavaScript is disabled in the browser.
+2. The <noscript> tag does not display its message when JavaScript is enabled in the browser.
+
+
+
