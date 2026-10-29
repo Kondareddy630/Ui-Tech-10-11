@@ -1,0 +1,225 @@
+JavaScript Notes for Students
+-------------------------------------------------
+
+1. JavaScript is a web programming language.
+2. JavaScript is used to add functionality , interactivity to a webpage.
+3. JavaScript was developed by Brendan Eich and released in 1995.
+History:
+Mocha → LiveScript → JavaScript → ECMAScript (ES)
+
+4. JavaScript is a case-sensitive language.
+
+
+Example: a and A are different.
+
+5. No special software is required to start learning JavaScript. A text editor and a web browser are sufficient.
+   - Chrome → V8
+   - Firefox → SpiderMonkey
+   - Internet Explorer → Chakra
+6. JavaScript is used in different environments.
+
+   a) Client-side (browser)
+
+   b) Server-side (Node.js)
+
+   c) Database-related environments (MongoDB)
+
+7. The JavaScript file extension is .js.
+
+
+ Uses of Client-Side JavaScript
+ ----------------------------------
+ 
+1. To validate forms before submission.
+2. To add content dynamically to a webpage.
+3. To perform calculations on a webpage.
+4. To fetch data from APIs.
+5. To add functionality to a webpage.
+6. To respond to user actions.
+7. To implement searching and filtering.
+8. To show and hide webpage elements.
+
+
+How many ways write the js code
+--------------------------------------
+JavaScript code can be written in 3 ways.
+
+1. Inline JavaScript
+Writing JavaScript code directly inside an HTML element using an event attribute.
+
+<button class="btn btn-success" onclick="alert('hello js')">Click</button>
+
+2. Internal JavaScript
+Writing JavaScript inside the <script> tag in the same HTML file.
+
+3. External JavaScript
+Writing JavaScript in a separate .js file and connecting it to the HTML file.
+
+Which is best place for connect external js file head or body?
+---------------------------------------------------------------
+
+
+The best place to connect an external JavaScript file is usually inside the <head> tag using the defer attribute.
+<script src="script.js" defer></script>
+
+1.src="script.js" connects the external JavaScript file.
+
+2.defer downloads the JavaScript file while HTML is being parsed and executes it after HTML parsing is complete.
+
+3.This allows your JavaScript to access HTML elements safely.
+
+
+<script src="script.js"></script>
+This also works because the HTML elements are parsed before the browser executes the js script.
+
+Difference                  Location	Recommended usage
+--------------------------------------------------------------------
+
+<head>                        with defer	Best general choice for external scripts
+Before </body>	               Also a good choice for traditional scripts
+<head>                        without defer	May delay HTML parsing
+
+
+Notes
+---------
+<noscript> Tag
+1. The <noscript> tag displays a message on a webpage when JavaScript is disabled in the browser.
+2. The <noscript> tag does not display its message when JavaScript is enabled in the browser.
+
+
+Variables 
+-----------------
+Js variables are used to store the data or information.
+JavaScript provides three  keywords for  declaration  the variable.
+those are var,let,const.
+
+Main differences
+----------------------------
+Feature	let	const
+Scope	Block scope	Block scope
+Reassignment	Allowed	Not allowed
+Redeclaration in the same scope	Not allowed	Not allowed
+Initialization	Optional	Required
+Hoisting	Yes	Yes
+Temporal Dead Zone	Yes	Yes
+Primitive value change	Allowed through reassignment	Not allowed through reassignment
+Object or array mutation	Allowed	Allowed
+Must use the same value throughout its lifetime?	No	The variable binding cannot be reassigned
+
+
+
+JavaScript Data Types
+--------------------------
+
+1. A data type represents the type of value stored in a variable.
+2. JavaScript is a dynamically typed language. A variable can hold values of different data types at different times.
+3. In JavaScript, we do not need to explicitly declare a variable's data type. The type is determined automatically from the value assigned to it at runtime.
+
+JavaScript has two data types: 1 primitive types  2. non-primitive type (Object).
+
+Primitive Datatypes:
+-----------------------
+1.number 2.string 3.boolean 4. undefined 5.null 6.bigint 7.symbol
+
+Non-Primitive Datatypes:
+-----------------------
+1.Object(array,object,functions)
+
+
+Number Datatype
+------------------
+The Number data type is used to store integer and decimal numeric values in JavaScript.
+let age = 25;
+let price = 99.50;
+let temperature = -10;
+
+Important points
+1. The Number data type stores positive numbers, negative numbers, integers, and decimal numbers.
+2. JavaScript uses the same Number type for integers and floating-point numbers.
+3. We do not need to specify the data type explicitly.
+4. JavaScript also supports special numeric values such as Infinity, -Infinity, and NaN.
+
+JavaScript Number Data Type Methods
+-------------------------------------------------------
+JavaScript provides methods to convert numbers into strings, format numbers, and check numeric values.
+
+1. toFixed()
+Converts a number to a string with a specified number of decimal places.
+
+2. toString()
+Converts a number into a string.
+
+3. toPrecision()
+Formats a number to a specified number of significant digits.
+
+4.toLocaleString()
+Formats a number according to a locale, often for displaying currency or thousands separators
+
+
+1. parseInt()
+Definition: parseInt() converts a string into an integer by reading from the beginning until it encounters a character that cannot be part of the number.
+
+console.log(parseInt("100"));      // 100
+console.log(parseInt("25.75"));    // 25
+console.log(parseInt("100px"));    // 100
+console.log(parseInt("Hello100")); // NaN
+
+
+let age = "25 years";
+console.log(parseInt(age)); // 25
+
+
+2. parseFloat()
+Definition: parseFloat() converts a string into a floating-point number, preserving its decimal part when present.
+
+let price = "199.50 rupees";
+console.log(parseFloat(price)); // 199.5
+
+
+Number()
+Definition: Number() converts the entire value into a number. The whole string must represent a valid numeric value, apart from permitted surrounding whitespace.
+
+console.log(Number("100"));     // 100
+console.log(Number("25.75"));   // 25.75
+console.log(Number("100px"));   // NaN
+console.log(Number("Hello"));   // NaN
+console.log(Number(""));        // 0
+console.log(Number("   "));     // 0
+
+
+Easy way to remember
+- parseInt() → extracts an integer from the beginning.
+- parseFloat() → extracts a decimal number from the beginning.
+- Number() → converts the entire value into a number.
+
+
+JavaScript isNaN()
+Definition: isNaN() is a JavaScript function used to check whether a value is NaN (Not-a-Number) after converting the value to a number.It returns a Boolean value: true or false.
+
+console.log(isNaN(100));       // false
+console.log(isNaN("Hello"));   // true
+console.log(isNaN("123"));     // false
+console.log(isNaN("123abc"));  // true
+console.log(isNaN(NaN));       // true
+
+
+<input type="text" id="age" placeholder="Enter your age">
+<button onclick="checkAge()">Check</button>
+
+<script>
+function checkAge() {
+    let age = document.getElementById("age").value;
+
+    if (isNaN(age)) {
+        alert("Please enter a valid number");
+    } else {
+        alert("Your age is " + age);
+    }
+}
+</script>
+
+Important interview point: NaN means “Not-a-Number,” and its type is "number".
+--------------------------------------------------------------------------
+
+console.log(typeof NaN); // "number"
+console.log(NaN === NaN); // false

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+// number: in js below any these number datatype
+
+let a=100;  // int
+let b=85.96;  // float
+let c=-96; // negative
+let d=2e3; // exponent
+let e=0b1010;  // binary code
+console.log(a,b,c,d,e);
+
+// typeof()
+
+console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(c));
+console.log(typeof(d));
+console.log(typeof(e));
+
+//number methods()
+
+
+let x="100";
+let y="300";
+
+//number()
+
+console.log(Number(x)+Number(y));
+console.log(Number("500"));
+console.log(Number("10.25"));
+console.log(Number("45 years"));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(null));
+console.log(Number(undefined));
+
+//parseInt()
+
+console.log(parseInt("10")+parseInt("20"));
+console.log(parseInt("10.25")+parseInt("20.34"));
+console.log(parseInt("45 years"));
+console.log(parseInt("10")+parseInt("20hello"));
+
+console.log(parseInt("10")+parseInt("20hello80"));
+console.log(parseInt("10")+parseInt("hello80"));
+console.log(parseInt("hello80"));
+
+console.log(parseInt(true));
+console.log(parseInt(false));
+console.log(parseInt(null));
+console.log(parseInt(undefined));
+
+
+//parseFloat()
+
+console.log(parseFloat("10.25")+parseFloat("50.36"));
+console.log(parseFloat("10.25")+parseFloat("50.36hello"));
+console.log(parseFloat("10.25")+parseFloat("hello50.36hello"));
+
+console.log(parseFloat(true));
+console.log(parseFloat(false));
+console.log(parseFloat(null));
+console.log(parseFloat(undefined));
+
+//toFixed();toPrecision()
+
+let price=20.92545;
+console.log(price);
+console.log(price.toFixed(0));
+console.log(price.toFixed(1));
+console.log(price.toFixed(2));
+console.log(typeof(price.toFixed(0)));
+
+console.log(price.toPrecision(2));
+console.log(price.toPrecision(3));
+console.log(price.toPrecision(4));
+
+//isNaN()
+
+console.log(isNaN("hello"));
+console.log(isNaN("100"));
+console.log(isNaN(500));
+console.log(isNaN(true));
+console.log(isNaN(false));
+console.log(isNaN(null));
+console.log(isNaN(undefined));
+
+// toLocaleString()
+
+
+let cost=13500;
+console.log(cost.toLocaleString('en-in',{style:"currency",currency:"INR",minimumFractionDigits:0}));
+
+console.log(cost.toLocaleString('en-us',{style:"currency",currency:"USD",minimumFractionDigits:0}));
+
+let views=50000000;
+console.log(views.toLocaleString('en-in',{
+    notation:"compact"
+}));
+
+console.log(views.toLocaleString('en-us',{
+    notation:"compact"
+}));
+
+
+//strings
+
+let msg1='good morning';
+let msg2="good morning"; // string literals
+let msg3=`good morning`;// template literals
+
+console.log(msg1,msg2,msg3);
+
+// diff string literals vs string literals
+
+let msg4="hello students pls do practice";
+let msg5=`
+hello
+hai
+students
+
+`
+
+let x1=100;
+let y1=900;
+
+console.log("x1 value=" + x1 + " " + "y1 value=" + y1 + " " + "sum" + "=" +(x1+y1));
+console.log(` x value =${x1} ,y1 value=${y1},sum=${x1+y1}`);
+
+console.log("sum=" + (x1+y1));
+console.log(`sum=${x1+y1}`);
+
+
+
+</script>
+    
+</body>
+</html>
