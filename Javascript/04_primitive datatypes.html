@@ -117,7 +117,7 @@ let msg3=`good morning`;// template literals
 
 console.log(msg1,msg2,msg3);
 
-// diff string literals vs string literals
+// diff string literals vs template literals
 
 let msg4="hello students pls do practice";
 let msg5=`
@@ -135,6 +135,167 @@ console.log(` x value =${x1} ,y1 value=${y1},sum=${x1+y1}`);
 
 console.log("sum=" + (x1+y1));
 console.log(`sum=${x1+y1}`);
+
+
+//string methods
+
+
+let message1="java script";
+console.log(message1);
+
+// length
+
+console.log(message1.length);
+
+//toUppercase()
+
+//console.log(message1.toUpperCase());
+// console.log(message1.toLowerCase());
+//console.log(message1);
+
+//indexnumber
+
+console.log(message1[0]);
+console.log(message1[1]);
+console.log(message1[2]);
+console.log(message1[3]);
+console.log(message1[-1]);
+
+//at();
+console.log(message1.at(0));
+console.log(message1.at(1));
+console.log(message1.at(-1));
+console.log(message1.at(-2));
+
+
+//indexOf()
+
+let email="abcd@gmail.com";
+console.log(email);
+console.log(email.indexOf("@"));//4
+console.log(email.indexOf("z"));//-1
+
+let fruit="banana";
+console.log(fruit.indexOf("a"));
+
+//lastIndexOf()
+console.log(fruit.lastIndexOf("a"));
+
+
+//includes()
+
+let brand="samusung mobile";
+console.log(brand.includes("mobile"));; true
+console.log(brand.includes("tvs"));; false
+
+//endWith()
+
+let photo="image.jpg";
+let resume="hello.doc";
+
+
+console.log(photo.endsWith("jpg"));
+console.log(resume.endsWith("doc"));
+console.log(resume.endsWith("xls"));
+
+//StartWith()
+let phone="+9195974444";
+console.log(phone.startsWith("+91"));
+console.log(phone.startsWith("+111"));
+
+
+//slice()
+
+let course="Java script";
+console.log(course.slice(0,4));
+console.log(course.slice(0,3));
+console.log(course.slice(4));
+console.log(course.slice(6));
+console.log(course.slice(-5,-2));
+console.log(course.slice(-10,-8));
+
+//substring()
+
+console.log(course.substring(0,4));
+console.log(course.substring(-5,-2));
+
+console.log(course.substring(1,4));
+console.log(course.substring(4,1));
+
+//substr()
+
+console.log("hello".substr(0,2));
+
+
+//boolean
+
+let stock=true;
+let isMarried=false;
+
+console.log(typeof(stock));
+console.log(typeof(isMarried));
+
+console.log(true+false);//1
+console.log(true+true);//2
+console.log(true+"hello");//1hello
+
+
+
+
+let age=0;
+console.log(Boolean(age));
+
+let username="";
+console.log(Boolean(username));
+
+
+//undefinded
+
+
+let salary;
+console.log(salary);//undefinded
+console.log(typeof(salary)); //undefinded
+
+
+
+// null
+
+
+let myage=null;
+console.log(myage);
+console.log(typeof(myage));
+
+
+// bigint
+
+
+console.log(Number.MAX_SAFE_INTEGER);
+
+let num=9007199254740999546466689879879n;
+console.log(num);
+console.log(typeof num);
+
+let a1=50000n;
+console.log(typeof(a1));
+
+
+//symbol()
+
+let id=Symbol();
+
+let student={
+
+    [id]:101,
+    name:"hello",
+    course:"java",
+    fees:5000
+}
+
+console.log(student);
+console.log(student[id]);
+
+
+
 
 
 
