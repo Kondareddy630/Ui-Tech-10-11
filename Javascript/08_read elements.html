@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+let colors=["red","blue","green","orange","pink","cyan","white"];
+console.log(colors);
+
+//map(),forEach(),filter(),find(),findLast(),findIndex(),findLastIndex(),every(),some()
+
+
+let numbers=[10,20,30,40,50,60,70,80];
+console.log(numbers);
+
+//map()
+
+numbers.map(function(ele,index){
+  console.log(ele,index);
+});
+
+//forEach()
+numbers.forEach(function(ele,index){
+  console.log(ele,index);
+});
+
+
+let mynumbers=[29,73,13,23,8,4,3,19,8,15,12,13,85,96];
+
+
+
+let square=mynumbers.map(function(n){
+  return n*n;//4  16 36 64
+});
+
+console.log(square);
+console.log(mynumbers);
+
+
+let square1=mynumbers.forEach(function(n){
+  return n*n;//4  16 36 64
+});
+
+console.log(square1);
+
+//filter()
+
+let even=mynumbers.filter(function(num){
+  return num%2==0;// true,true,false
+});
+
+console.log(even);
+
+
+let firsteven=mynumbers.find(function(num){
+  return num%2==0;
+});
+console.log(firsteven);
+
+
+
+let firstevenindex=mynumbers.findIndex(function(num){
+  return num%2==0;
+});
+console.log(firstevenindex);
+
+
+let lasteven=mynumbers.findLast(function(num){
+  return num%2==0;
+});
+console.log(lasteven);
+
+let lastevenidex=mynumbers.findLastIndex(function(num){
+  return num%2==0;
+});
+console.log(lastevenidex);
+
+
+let mynumbers1=[4,10,60,100,99];
+console.log(mynumbers1);
+
+//some()=>find any element even
+
+
+let result1=mynumbers1.some(function(num){
+  return num%2==0;
+});
+console.log(result1);
+
+//every()
+let result2=mynumbers1.every(function(num){
+  return num%2==0;
+});
+console.log(result2);
+
+</script>
+    
+</body>
+</html>
