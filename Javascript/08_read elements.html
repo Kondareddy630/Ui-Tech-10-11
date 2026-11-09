@@ -42,7 +42,7 @@ console.log(mynumbers);
 
 
 let square1=mynumbers.forEach(function(n){
-  return n*n;//4  16 36 64
+  return n*n;//undefined
 });
 
 console.log(square1);
@@ -56,19 +56,20 @@ let even=mynumbers.filter(function(num){
 console.log(even);
 
 
+//find()
 let firsteven=mynumbers.find(function(num){
   return num%2==0;
 });
 console.log(firsteven);
 
 
-
+//findIndex()
 let firstevenindex=mynumbers.findIndex(function(num){
   return num%2==0;
 });
 console.log(firstevenindex);
 
-
+//findLast()
 let lasteven=mynumbers.findLast(function(num){
   return num%2==0;
 });
@@ -96,6 +97,42 @@ let result2=mynumbers1.every(function(num){
   return num%2==0;
 });
 console.log(result2);
+
+
+//for in, for of , for loop
+
+let technologies=["html","css","js","react","angular"];
+console.log(technologies);
+console.log(technologies[0]);
+console.log(technologies[1]);
+
+// for in
+for(let index in technologies)
+{
+
+  console.log(index,technologies[index]);
+}
+
+//for of
+
+for(let tech   of technologies)
+{
+
+  console.log(tech);
+
+}
+
+// for loop
+
+for(let i=0;i<technologies.length;i++)
+{
+
+  console.log(technologies[i]);
+
+}
+
+
+
 
 </script>
     
