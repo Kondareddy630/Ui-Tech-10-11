@@ -8,14 +8,524 @@
 
 <script>
 
+    /*
 
-var x = 10;
+// create object
 
-{
-    console.log(x); // ReferenceError
-    var x = 20;
+let student={
+    
+    sid:101,
+    name:"hello",
+    course:"java",
+    fees:5000
+};
+
+console.log(student);
+
+console.log(student.sid);
+console.log(student.name);
+console.log(student.course);
+console.log(student["fees"]);
+
+
+// nested object?
+
+
+let emp={
+    empno:101,
+    name:"hello",
+    job:"manager",
+    salary:90000,
+
+    address:{
+        city:"hyd",
+        state:"ts",
+        pincode:500072
+    }
 }
 
+console.log(emp.empno);
+console.log(emp.name);
+console.log(emp.address.city);
+
+
+// object with methods
+
+let mystudent={
+    sid:101,
+    name:"hello",
+    eng:90,
+    tel:100,
+    sc:75,
+    mat:100,
+
+    total:function(){
+      return this.eng+this.tel+this.sc+this.mat
+    },
+
+    result(){
+         return (this.eng>=35 && this.tel>=35 && this.sc>=35 && this.mat>=35)?"Pass":"Fail"
+    }
+}
+
+console.log(mystudent.total());
+console.log(mystudent.result());
+
+
+// in
+console.log("phone" in mystudent);
+console.log("sid" in mystudent);
+console.log("village" in emp.address);
+
+// destructuring
+
+
+let{empno,name,job,salary}=emp;
+console.log(empno,name,job,salary);
+
+
+
+
+let{sid,name:sname,total,result}=mystudent;
+
+total = total.bind(mystudent);
+result = result.bind(mystudent);
+console.log(sid,sname,total(),result());
+
+
+
+let{address:{city,state,pincode}}=emp;
+console.log(city,state,pincode);
+
+
+// key()
+console.log(Object.keys(emp));
+console.log(Object.values(emp));
+console.log(Object.entries(emp));
+
+*/
+
+//add,update,delete properties
+
+
+// let student={
+    
+//     sid:101,
+//     name:"hello",
+//     course:"java",
+//     fees:5000
+// };
+
+// console.log(student);
+
+// //add
+
+// student.city="hyderabad";
+// console.log(student);
+
+// //update
+// student.fees=9000;
+// console.log(student);
+
+//delete
+
+// delete student.fees;
+// delete student.sid;
+// console.log(student);
+/*
+
+// for in
+
+for(let s in student)
+{
+    console.log(s,student[s]);
+}
+
+
+for( let [key,value] of Object.entries(student))
+{
+    console.log(key, value);
+}
+*/
+
+/*
+
+let mystudent={
+    sid:101,
+    name:"hello",
+    course:"java full stack",
+    fees:9000,
+
+}
+console.log(mystudent);
+
+let updateStudent={
+    ...mystudent,
+    course:"python full stack",
+    fees:15000,
+}
+
+console.log(updateStudent);
+
+
+//object copy
+
+let myemp1={
+    emp:101,
+    name:"raju",
+    job:"manager",
+    salary:9000,
+    address:{
+        city:"hyd"
+    }
+};
+
+console.log(myemp1);
+
+
+let myemp2=myemp1;
+console.log(myemp2);
+
+myemp2.name="Raj Kumar";
+console.log(myemp2);
+console.log(myemp1);
+
+// spread operator :shallow copy
+
+let myemp3={...myemp1};
+console.log(myemp3);
+myemp3.name="Sai kumar";
+myemp3.salary=8500;
+console.log(myemp3);
+console.log(myemp1);
+
+myemp3.address.city="pune";
+
+console.log(myemp3);
+console.log(myemp1);
+
+//deep copy
+
+let myemp4=structuredClone(myemp1);
+console.log(myemp4);
+myemp4.job="Sr.Manager";
+console.log(myemp4);
+console.log(myemp1);
+
+*/
+
+//Optional chaining (?.) Nullish coalescing (??)
+
+
+// let myemp1={
+//     emp:101,
+//     name:"raju",
+//     job:"manager",
+//     salary:9000,
+//     address:{
+//         city:"hyd"
+//     }
+//     ,
+//     printCity()
+//     {
+//         console.log("Your city is=",this.address.city)
+//     }
+// };
+
+// console.log(myemp1.address?.city);
+// console.log(myemp1.address?.state);
+// console.log(myemp1.address?.state??"Plese Enter State");
+
+// console.log(myemp1.account?.balance??"Enter balance");
+// myemp1.printCity?.()
+
+
+// console.log(Object.hasOwn(student, "sid"));
+// console.log(Object.hasOwn(student, "name"));
+// console.log(Object.hasOwn(student, "city"));
+// console.log(Object.hasOwnProperty(student,"address"));
+
+
+
+// let student1 = {
+//     sid: 101,
+//     name: "Rahul",
+//     course: "JavaScript"
+// };
+
+// let student2 = {};
+
+// Object.assign(student2, student1);
+
+// console.log(student2);
+
+
+// let student1 = {
+//     sid: 101,
+//     name: "Rahul",
+//     fees: 5000
+// };
+
+// let student2 = Object.assign({}, student1);
+
+// student2.name = "Kiran";
+// student2.fees = 9000;
+
+// console.log(student1);
+// console.log(student2);
+
+
+
+// let obj1 = {
+//     name: "Rahul",
+//     age: 22
+// };
+
+// let obj2 = {
+//     course: "JavaScript",
+//     fees: 5000
+// };
+
+// let result = Object.assign({}, obj1, obj2);
+
+// console.log(result);
+
+
+// let student = {
+//     name: "Rahul",
+//     course: "JavaScript",
+//     fees: 5000
+// };
+
+// Object.assign(student, {
+//     course: "React",
+//     fees: 10000
+// });
+
+// console.log(student);
+
+
+
+//getter ,settter
+
+/*
+let student={
+    sid:101,
+    age:30,
+
+    get getage(){
+        return this.age;
+    },
+
+    set updateage(age)
+    {
+
+        if(age>=18)
+    {
+        this.age=age;
+        console.log("Age updated successfully")
+    }
+
+    else{
+         console.log("Invalid age");
+    }
+
+    }
+}
+
+console.log(student.getage);
+
+// student.updateage=50;
+student.updateage=10;
+console.log(student.getage);
+
+
+// 
+
+*/
+
+
+/*
+let myobj={
+    sid:101,
+    name:"hello",
+    course:"java full stack",
+    fees:9000
+};
+
+console.log(myobj);
+
+let jsonobject=JSON.stringify(myobj);
+console.log(jsonobject);
+
+let jsobject=JSON.parse(jsonobject);
+console.log(jsobject);
+*/
+
+/*
+let student1={
+    sid:101,
+    name:"hello"
+}
+
+let student2={
+    sid:102,
+    name:"hai"
+}
+
+console.log(student1);
+console.log(student2);
+*/
+
+
+let student = {
+    id: 101,
+    name: "Rahul",
+    address: {
+        city: "Hyderabad",
+        location: {
+            state: "Telangana",
+            country: "India"
+        }
+    }
+};
+
+
+// function getKeys(obj) {
+
+//     Object.keys(obj).forEach(function(key) {
+
+//         console.log(key,typeof obj[key]);
+
+      
+
+
+
+//         if (typeof obj[key] === "object" && obj[key] !== null) {
+//             getKeys(obj[key]);
+//         }
+
+//     });
+
+// }
+
+// getKeys(student);
+
+
+// let student = {
+//     id: 101,
+//     name: "Rahul",
+//     address: {
+//         city: "Hyderabad",
+//         location: {
+//             state: "Telangana",
+//             country: "India"
+//         }
+//     }
+// };
+
+// function getValues(obj) {
+
+//     Object.values(obj).forEach(function(value) {
+
+
+//         console.log(value,typeof value)
+//         if (typeof value === "object" && value !== null) {
+
+//             getValues(value);
+
+//         }
+//         else {
+//             console.log(value);
+//         }
+
+//     });
+
+// }
+
+// getValues(student);
+
+
+
+// let marks = {
+//     html: 80,
+//     css: 90,
+//     javascript: 95,
+//     react: 85
+// };
+
+
+// console.log(Object.entries(marks));
+
+// Object.entries(marks).forEach(function([key,value]){
+//     console.log(key,value);
+
+// })
+
+// for (let [key, value] of Object.entries(student)) {
+
+//     console.log(key, value);
+
+// }
+
+
+
+let mystudent = {
+    id: 101,
+    name: "Rahul",
+    address: {
+        city: "Hyderabad",
+        location: {
+            state: "Telangana",
+            country: "India"
+        }
+    }
+};
+
+
+console.log(mystudent);
+
+
+let hellostudent={};
+
+Object.assign(hellostudent,mystudent);
+
+console.log(hellostudent);
+
+
+
+let even={
+    a:10,
+    b:20,
+    c:30
+}
+
+let odd={
+    x:100,
+    y:200,
+    z:9000
+}
+
+let all=Object.assign({},even,odd);
+
+console.log(all);
+
+
+let person={
+    age:50,
+    address:{
+        city:"hyd"
+    }
+};
+
+let newperson=Object.assign({},person);
+console.log(newperson);
+
+newperson.age=96;
+console.log(person.age);
+newperson.address.city="delhi";
+console.log(person);
+console.log(newperson);
 
 </script>
     

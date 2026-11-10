@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+  
+//sort(),reverse(),toSorted(),toReversed()
+
+
+// let colors=["red","blue","cyan","orange"];
+// console.log(colors);
+
+// // colors.sort();//asc only
+// // console.log(colors);
+
+// //reverse()
+
+// // colors.reverse();
+// // console.log(colors);
+
+// colors.sort();
+// colors.reverse();
+// console.log(colors);
+
+
+let numbers=[100,10,5,52,63,605,66,501];
+console.log(numbers);
+
+// numbers.sort(function(a,b){
+//     return a-b;
+// });
+
+
+// numbers.sort(function(a,b){
+//     return b-a;
+// });
+// console.log(numbers);
+
+let aftersoft=numbers.toSorted(function(a,b){
+    return a-b;
+});
+
+console.log(numbers);
+console.log(aftersoft);
+
+// Array destructuring is a way to extract values from an array and store them in separate variables easily.
+
+
+let names=["rama","sai","anu","hanvika","jyothi"];
+console.log(names);
+
+//without destructuring
+let a=names[0];
+let b=names[1];
+let c=names[2];
+let d=names[3];
+let e=names[4];
+
+console.log(a,b,c,d,e);
+
+// with destructuring
+
+let[p,q,r,s,t]=names;
+console.log(p,q,r,s,t);
+//skip the elements
+
+let[name1,,name2,,name3]=names;
+console.log(name1,name2,name3);
+
+// rest operator => used to store the elements in array
+let[n1,n2,...n3]=names;
+
+console.log(n1,n2,n3);
+
+//spread operator(...)=> used to extract the elements
+
+
+let even=[2,4,6,8,10];
+let odd=[1,3,5,7,9];
+
+//merge=>concat() // old way
+
+let all=even.concat(odd);
+console.log(all);
+
+// spread operator
+
+let allnum=[...even,...odd];
+console.log(allnum);
+
+
+// 
+
+let salaries=[1000,9600,8500,7400,3000];
+
+console.log(Math.max(10,20,30));
+
+let maxsalary=Math.max.apply(null,salaries);
+console.log(maxsalary);
+
+console.log(Math.max(...salaries));
+console.log(Math.min(...salaries));
+
+//nested arrays
+
+let mynumbers=[10,20,30,40,50];
+console.log(mynumbers);
+//calculate the data
+
+let total=mynumbers.reduce((total,value)=>total+value,0);
+console.log(total);
+</script>
+    
+</body>
+</html>
