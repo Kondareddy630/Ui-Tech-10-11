@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+//object
+
+let student={
+
+    sid:101,
+    name:"hello",
+    course:"java",
+    fees:9000
+
+};
+
+console.log(student);
+
+//access properties ,notations ., []
+
+console.log(student.sid);
+console.log(student.name);
+console.log(student.course);
+console.log(student.fees);
+console.log(student.phone);
+console.log(student["sid"]);
+console.log(student["name"]);
+console.log(student["course"]);
+console.log(student["fees"]);
+
+
+
+//only keys
+
+// for in
+
+for(let key in student)
+{
+    console.log(key,student[key]);
+}
+
+// only keys
+
+console.log(Object.keys(student));
+
+//only values
+
+console.log(Object.values(student));
+//key ands values
+
+
+console.log(Object.entries(student));
+
+Object.entries(student).forEach(([key,value])=>{
+
+    console.log(key,value)
+});
+
+// for of
+
+for(let [key,value] of Object.entries(student))
+{
+    console.log(key,value);
+}
+
+</script>
+    
+</body>
+</html>

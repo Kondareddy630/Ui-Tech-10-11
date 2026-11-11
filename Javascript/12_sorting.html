@@ -104,7 +104,6 @@ console.log(maxsalary);
 console.log(Math.max(...salaries));
 console.log(Math.min(...salaries));
 
-//nested arrays
 
 let mynumbers=[10,20,30,40,50];
 console.log(mynumbers);
@@ -112,6 +111,30 @@ console.log(mynumbers);
 
 let total=mynumbers.reduce((total,value)=>total+value,0);
 console.log(total);
+
+
+
+//nested arrays
+
+let hellonumbers=[10,20,30,[40,50,60,[70,80,90,[100,200]]]];
+
+console.log(hellonumbers);
+console.log(hellonumbers[0]);
+
+console.log(hellonumbers[3][1]);
+console.log(hellonumbers[3][3][0]);
+
+// flat()
+
+console.log(hellonumbers.flat());// 10 20 30 40 50 60,[70,80,90]
+console.log(hellonumbers.flat(Infinity));
+
+// reference
+
+
+
+
+
 </script>
     
 </body>

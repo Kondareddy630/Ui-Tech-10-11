@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+  
+// reference copy
+
+let a=[10,20,30];
+let b=a;
+
+console.log(a==b);
+console.log(a);
+console.log(b);
+b.push(40);
+console.log(a);
+console.log(b);
+a.unshift(400);
+
+console.log(a);
+console.log(b);
+
+
+//shallow copy(...spread operator)
+
+
+
+let colors=["red","blue","green",["pink","orange","purple"]];
+console.log(colors);
+
+let copycolors=[...colors];
+console.log(copycolors);
+
+console.log(colors);
+console.log(copycolors);
+
+copycolors.push("white");
+console.log(copycolors);
+
+console.log(colors);
+
+console.log(copycolors[3]);
+
+copycolors[3].push("hello");
+
+console.log(colors);
+console.log(copycolors);
+
+//deep copy
+let allcolors=structuredClone(colors);
+console.log(allcolors);
+
+</script>
+    
+</body>
+</html>
