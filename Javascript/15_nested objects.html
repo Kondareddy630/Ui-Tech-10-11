@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+
+// let emp={
+
+//     empno:101,
+//     name:"raju",
+//     job:"manager",
+//     salary:90000,
+
+//     address:{
+//         state:"ts",
+//         city:"hyd",
+//         pincode:500072
+//     },
+
+//     account:{
+
+//         saving:{
+//             accno:112233,
+//             balance:0
+//         },
+//         current:{
+//             accno:778899,
+//             balance:9000
+//         }
+//     }
+
+
+// }
+
+
+// console.log(emp);
+
+// console.log(emp.address);
+// console.log(emp.account.saving);
+// console.log(emp.account.current);
+
+// console.log(emp.empno);
+// console.log(emp.address.city);
+// console.log(emp.account.saving.accno);
+
+// let{empno,name,job,salary,address:{city,state,pincode},account:{saving:{accno,balance},current:{accno:acno,balance:bal}}}=emp;
+
+// console.log(empno,name,job,salary,city,state,pincode,accno,balance,acno,bal);
+
+
+//
+
+// let student={
+//     sid:101,
+//     name:"raju",
+//     course:"java",
+//     fees:9000,
+//     phone:null,
+//     fname:null,
+//     address:{
+//         city:"hyd",
+//         state:"ts"
+//     }
+// }
+
+// console.log(student);
+
+// console.log(student.address.city);
+// console.log(student.account?.balance?? "Please enter salary");
+// console.log(student.rating?.rate);
+// console.log(student.phone??"Enter phone number");
+// console.log(student.fname??"Enter your father name");
+
+// console.log(0??"hello");//0
+// console.log("hello"??"hai");//hello
+// console.log(undefined??"Raju");//raju
+// console.log(null??8000);//8000
+
+
+// methods
+
+
+let student={
+
+    id:101,
+    eng:85,
+    tel:96,
+    mat:100,
+    sc:60,
+
+    total:function(){
+        return this.eng+this.tel+this.mat+this.sc;
+    },
+
+    result()
+    {
+        return (this.eng>=35 && this.tel>=35 && this.mat>=35 && this.sc>=35)?"Pass":"Fail"
+    },
+
+
+
+}
+
+console.log(student.id);
+console.log(student.total());
+console.log(student.result());
+
+console.log(student.printdetail?.()??"No method");
+
+
+
+</script>
+    
+</body>
+</html>
