@@ -105,13 +105,117 @@ let student={
 
 }
 
+
+console.log(student.id);
+console.log(student.total());
+console.log(student.result());
+console.log(student.printdetail?.()??"No method");
+
+
+
 console.log(student.id);
 console.log(student.total());
 console.log(student.result());
 
-console.log(student.printdetail?.()??"No method");
+
+let{id,total,result}=student;
+
+console.log(id,total(),result());
+
+console.log(student.total());
+console.log(student.result());
+
+// in
+
+console.log("phone" in  student);// false
+console.log("id" in  student);// true
 
 
+/*
+
+let myemp={
+    empno:101,
+    name:"raju",
+    course:"java",
+    fees:5000
+};
+
+console.log(myemp);
+
+console.log(myemp.empno);
+console.log(myemp.name);
+
+myemp.name="Raju Kumar";
+console.log(myemp);
+
+delete myemp.fees;
+delete myemp.course;
+console.log(myemp);
+*/
+
+
+/*
+
+let mystudent={
+
+
+    id:101,
+    name:"sai",
+    course:"java",
+    fees:5000
+
+};
+
+console.log(mystudent);
+
+
+let updatestudent={
+    ...mystudent,
+    phone:"45859674",
+    city:"hyd",
+    fees:9000
+
+};
+
+console.log(updatestudent);
+*/
+
+
+let ob1={
+    x:10,
+    y:20
+}
+
+console.log(ob1);
+
+let ob2=ob1;
+console.log(ob2);
+
+console.log(ob1===ob2);
+
+ob2.y=96;
+
+console.log(ob1.y);
+console.log(ob2.y);
+
+// shallow copy
+
+
+let address={
+    city:"hyd",
+    state:"ts"
+}
+
+console.log(address);
+
+let newaddress={...address};
+console.log(newaddress);
+
+
+newaddress.state="delhi";
+
+console.log(address.state);
+console.log(newaddress.state);
 
 </script>
     

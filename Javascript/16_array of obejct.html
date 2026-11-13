@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+
+
+let students=[
+{sid:101,name:"a",course:"java",fees:9000},
+{sid:102,name:"b",course:"ui",fees:5000},
+{sid:103,name:"c",course:"python",fees:7000},
+{sid:104,name:"d",course:"ui",fees:3000},
+{sid:105,name:"e",course:"java",fees:6000}
+
+
+];
+
+console.log(students);
+
+//wap read and print the all students data
+
+students.forEach(function(s){
+    console.log(s.sid,s.name,s.course,s.fees);
+
+});
+
+// for of
+
+for(let s of  students)
+{
+    console.log(s.sid,s.name,s.course,s.fees)
+}
+
+// wap print only ui students
+
+
+// let uistudents=students.filter(function(s){
+//     return s.course==="ui";//false true false true false
+
+// });
+
+// console.log(uistudents);
+
+// find first ui student
+
+// let uistudent=students.find(function(s){
+//     return s.course=="ui";
+// });
+// console.log(uistudent);
+
+// find  sum of fees
+
+// let total=students.reduce((total,s)=>total+s.fees,0);
+// console.log(total);
+
+// let aftersort=students.toSorted((a,b)=>a.fees-b.fees);
+// console.log(aftersort);
+
+
+// let aftersort1=students.toSorted((a,b)=>b.fees-a.fees);
+// console.log(aftersort1);
+
+
+
+let courseSort = students.toSorted((a, b) =>
+    a.course.localeCompare(b.course)
+);
+
+console.log(courseSort);
+
+</script>
+    
+</body>
+</html>
