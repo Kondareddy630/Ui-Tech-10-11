@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+// function declaration
+
+function printMessage()
+{
+   console.log("hello students");
+}
+printMessage();
+
+
+// function expression(name less functions)
+
+
+
+let sum=function(){
+    let a=10;
+    let b=20;
+    let c=a+b;
+    console.log(c);
+}
+
+console.log(sum);
+
+sum();
+sum();
+
+// arrow functions
+
+let message=()=>console.log("hello");
+message();
+
+let messages=()=>{
+    console.log("hello");
+    console.log("Hai");
+    console.log("How are you?");
+}
+
+messages();
+
+let colors=["red","blue","green"];
+
+// colors.forEach((color)=>console.log(color));
+
+colors.map((color)=>{
+    console.log(color);
+});
+
+//IIFE
+
+
+(
+function()
+{
+ console.log("Javascript");
+})()
+
+</script>
+    
+</body>
+</html>

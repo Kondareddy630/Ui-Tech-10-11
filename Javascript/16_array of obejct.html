@@ -14,7 +14,9 @@ let students=[
 {sid:102,name:"b",course:"ui",fees:5000},
 {sid:103,name:"c",course:"python",fees:7000},
 {sid:104,name:"d",course:"ui",fees:3000},
-{sid:105,name:"e",course:"java",fees:6000}
+{sid:105,name:"e",course:"java",fees:6000},
+{sid:106,name:"f",course:"python",fees:9000}
+
 
 
 ];
@@ -23,17 +25,17 @@ console.log(students);
 
 //wap read and print the all students data
 
-students.forEach(function(s){
-    console.log(s.sid,s.name,s.course,s.fees);
+// students.forEach(function(s){
+//     console.log(s.sid,s.name,s.course,s.fees);
 
-});
+// });
 
 // for of
 
-for(let s of  students)
-{
-    console.log(s.sid,s.name,s.course,s.fees)
-}
+// for(let s of  students)
+// {
+//     console.log(s.sid,s.name,s.course,s.fees)
+// }
 
 // wap print only ui students
 
@@ -65,12 +67,15 @@ for(let s of  students)
 // console.log(aftersort1);
 
 
-
+/*
 let courseSort = students.toSorted((a, b) =>
     a.course.localeCompare(b.course)
 );
 
 console.log(courseSort);
+*/
+
+
 
 </script>
     

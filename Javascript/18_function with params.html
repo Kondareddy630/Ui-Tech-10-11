@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+// function params
+
+function sum(a,b)
+{
+
+    let c=a+b;
+    console.log(c);
+}
+sum(10,20);
+sum(100,200);
+
+
+//print elements
+
+let colors=["red","blue","green"];
+let numbers=[10,20,30];
+
+function printElements(elements)
+{
+  elements.forEach((color)=>console.log(color));
+}
+
+printElements(colors);
+printElements(numbers);
+
+// what is default para
+
+// function sum1(a,b,c=1)
+// {
+
+//     let result1=(a+b)*c;
+//     console.log(result1);
+// }
+
+// sum1(10,20);
+// sum1(4,5,6);
+// sum1(4,5,null);
+// sum1(2,3,undefined);
+// sum(10,20,30,40,50);
+
+
+// rest para
+
+function mysum(a,b,...c)
+{
+
+    console.log(a,b,c);
+
+}
+
+mysum(10,20,30,40,50,60);
+
+
+function mysum()
+{
+
+    console.log(arguments);
+    console.log(arguments[0]+arguments[1])
+
+}
+
+mysum(10,20,30,40,50,60);
+</script>
+    
+</body>
+</html>
