@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+// function return
+
+
+function sum(a,b)
+{
+   return a+b;
+}
+
+function sub(a,b)
+{
+    return a-b;
+}
+
+function mul(a,b)
+{
+    return a*b;
+}
+
+
+let calculate=(a,b,callback)=>{
+   return callback(a,b);
+}
+
+
+let r1=calculate(10,2,sum);
+console.log(r1);
+
+let r2=calculate(9600,1200,sub);
+console.log(r2);
+
+let r3=calculate(4,5,mul);
+console.log(r3);
+
+let r4=calculate(100,20,(a,b)=>a/b);
+console.log(r4);
+
+
+//. Higher-Order Function Returning Another Function
+
+function outer(){
+
+    console.log("I am outer function");
+
+    return function inner(){
+
+            return "hello";
+    }
+
+}
+
+// let inner=outer();
+// inner();
+
+let result=outer()();
+console.log(result);
+
+</script>
+    
+</body>
+</html>

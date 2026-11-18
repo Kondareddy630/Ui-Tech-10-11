@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+// function return
+
+function outer(){
+
+    let a=100;
+
+    return function outer()
+    {
+        let b=200;
+        let c=a+b;
+        return c;
+
+    }
+
+}
+
+let inner=outer();
+console.log(inner());
+
+
+
+
+
+</script>
+    
+</body>
+</html>

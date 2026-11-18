@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+// function return
+
+
+function sum()
+{
+
+    let a=100;
+    let b=200;
+    return c=a+b;
+
+}
+
+let r1=sum();
+console.log(r1);
+
+
+
+function sum1()
+{
+
+    let a=100;
+    let b=200;
+    let c=a+b;
+    return [a,b,c];
+
+}
+
+let[a1,b1,c1]=sum1();
+console.log(a1,b1,c1);
+
+
+
+let emp={
+    empno:101,
+    name:"raju",
+    job:"manager",
+    salary:50000
+}
+
+function printEmp(e){
+
+    return{
+        Empno:e.empno,
+        Name:e.name,
+        Job:e.job,
+        Salary:e.salary
+    }
+
+}
+
+let {Empno,Name,Job,Salary}=printEmp(emp);
+console.log(Empno,Name,Job,Salary);
+
+
+</script>
+    
+</body>
+</html>

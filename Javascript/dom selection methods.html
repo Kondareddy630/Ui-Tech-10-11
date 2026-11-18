@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ui Technologies</title>
+</head>
+<body>
+
+<h1 id="mainheading">Ui Technologies</h1>
+<h2 id="subheading">Ui Technologies</h2>
+
+<p>para1</p>
+<p>para2</p>
+<p>para3</p>
+<p>para4</p>
+
+<div class="box1">
+    box1
+</div>
+
+
+<div class="box1">
+    box2
+</div>
+
+<div class="box1">
+    box3
+</div>
+
+<ul>
+    <li>one</li>
+    <li>two</li>
+</ul>
+
+<script>
+
+//based on id
+let e1=document.getElementById("mainheading");
+console.log(e1);
+
+let e2=document.getElementById("subheading");
+console.log(e2);
+
+//based on tag
+
+let p=document.getElementsByTagName("p");
+console.log(p);
+// 
+// console.log(p.length);
+// console.log(p[0]);
+// console.log(p[1]);
+// console.log(p[2]);
+// console.log(p[3]);
+
+
+
+for(let e  of p)
+{
+    console.log(e);
+}
+
+for(i=0;i<p.length;i++)
+{
+    console.log(p[i]);
+}
+
+[...p].forEach(function(e){
+
+    console.log(e);
+});
+
+//className
+
+
+let boxes=document.getElementsByClassName("box1");
+console.log(boxes);
+console.log(boxes.length);
+console.log(boxes[0]);
+console.log(boxes[1]);
+console.log(boxes[2]);
+
+//querySelector()
+
+let a=document.querySelector("#mainheading");
+console.log(a);
+let p1=document.querySelector("p");
+console.log(p1);
+
+let mybox=document.querySelector(".box1");
+console.log(mybox);
+
+let li=document.querySelector("ul li");
+console.log(li);
+
+
+//querySelectAll()
+
+let allli=document.querySelectorAll("ul li");
+console.log(allli);
+console.log(allli[0]);
+console.log(allli[1]);
+
+allli.forEach(function(li){
+    console.log(li);
+});
+
+let allboxs=document.querySelectorAll(".box1");
+console.log(allboxs);
+</script>
+    
+</body>
+</html>

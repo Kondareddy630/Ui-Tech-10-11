@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<script>
+
+// function return
+
+let student1={
+    sid:101,
+    name:"hello",
+    course:"java",
+    fees:5000
+}
+
+console.log(student1);
+
+
+let student2={
+    sid:102,
+    name:"hai",
+    course:"python",
+    fees:6000
+}
+
+console.log(student2);
+
+
+let student3={
+    sid:103,
+    name:"jyothi",
+    course:"ui",
+    fees:9000
+}
+
+console.log(student3);
+
+
+
+function student(sid,name,course,fees)
+{
+
+    this.sid=sid;
+    this.name=name;
+    this.couse=course;
+    this.fees=fees
+
+}
+
+let s1=new student(101,"hello","java",1000);
+console.log(s1);
+
+let s2=new student(102,"hai","python",5000);
+console.log(s2);
+
+let s3=new student(103,"raju","ui",9000);
+console.log(s3);
+
+
+// wap print 1-5
+
+
+function printnumbers(n)
+{
+
+if(n>5)
+{
+    return;
+}
+console.log(n);//1,2 3 4 5 6>6
+
+printnumbers(n+1); 
+
+}
+
+printnumbers(1)
+
+</script>
+    
+</body>
+</html>
