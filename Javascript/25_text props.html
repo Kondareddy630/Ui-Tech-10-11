@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ui Technologies</title>
+</head>
+<body>
+
+
+
+<div id="box1">
+
+    hello
+    <u>hai</u>
+    <b>bold</b>
+    <p style="display:none;">hyd</p>
+
+</div>
+
+<div id="box2">
+
+</div>
+
+<p id="p1"></p>
+
+<p id="p2"></p>
+
+<p id="p3"></p>
+
+<h2 id="java">Java Full Stack</h2>
+
+<i id="city">Hyderabad</i>
+
+<script>
+
+document.querySelector("#city").outerText="hello";
+
+
+document.getElementById("java").outerHTML="<b>Python full stack</b>"
+
+let r1=document.getElementById("box1").innerText;
+let r2=document.getElementById("box1").textContent;
+
+console.log(r1);
+console.log(r2);
+
+
+// document.getElementById("p1").innerText="&#8377;5000";
+// document.getElementById("p2").innerText="<b><u>good morning</u></b>";
+
+
+// document.getElementById("p1").innerHTML="&#8377;5000";
+// document.getElementById("p2").innerHTML="<b><u>good morning</u></b>";
+
+// // innerText,innerHTML,textContent,outerHTML
+
+// let a=document.getElementById("box1").innerText;
+// console.log(a);
+
+
+
+// let b=document.getElementById("box1").innerHTML;
+// console.log(b);
+
+
+// // document.getElementById("box2").innerText=a;
+// document.getElementById("box2").innerHTML=b;
+
+</script>
+    
+</body>
+</html>

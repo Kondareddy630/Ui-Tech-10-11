@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ui Technologies</title>
+    <style>
+        #p1{
+            color:red;
+            background-color: pink;
+            padding: 20px;
+            box-shadow: 0px 0px 4px black;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="h1">Java  Fulll Stack</h1>
+
+<h1 id="h2" style="color:green;background-color:lightgreen;padding: 10px;">Python Full Stack</h1>
+
+
+<p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam nesciunt. Placeat harum earum voluptas fugiat provident deserunt facilis recusandae, totam illo quo. Molestias magnam quas quo consequuntur tempora quae.</p>
+
+<script>
+//style
+
+let p=document.getElementById("p1");
+
+let styles = getComputedStyle(p);
+console.log(styles.color);
+console.log(styles.backgroundColor);
+console.log(styles.padding);
+
+// let h1=document.getElementById("h1");
+// h1.style.color="red";
+// h1.style.textAlign="center";
+// h1.style.textShadow="2px 2px 2px blue";
+
+// let h2=document.getElementById("h2");
+
+// console.log(h2.style[0]);
+// console.log(h2.style[1]);
+// console.log(h2.style[2]);
+// console.log(h2.style.color);
+// console.log(h2.style.backgroundColor);
+// console.log(h2.style.padding);
+
+// document.getElementById("h2").style.color="blue";
+// document.getElementById("h2").style.backgroundColor="lightblue";
+// document.getElementById("h2").style.border="1px solid red";
+// document.getElementById("h2").style.boxShadow="0px 5px 4px   red";
+</script>
+    
+</body>
+</html>

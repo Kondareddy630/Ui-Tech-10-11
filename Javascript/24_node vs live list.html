@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ui Technologies</title>
+</head>
+<body>
+
+
+
+
+<div class="box1">
+    box1
+</div>
+
+
+<div class="box1">
+    box2
+</div>
+
+<div class="box1">
+    box3
+</div>
+
+
+
+<script>
+
+
+
+let list1 = document.getElementsByClassName("box1");
+
+let list2 = document.querySelectorAll(".box1");
+
+console.log(list1.length);
+console.log(list2.length);
+
+// list2.forEach(function(e){
+
+//     console.log(e);
+// });
+Array.from(list1).forEach(function(e){
+
+    console.log(e);
+});
+
+let newbox=document.createElement("div");
+newbox.className="box1";
+newbox.innerText="box4";
+
+document.body.appendChild(newbox);
+
+console.log(list1.length);
+console.log(list2.length);
+
+console.log(list1);
+console.log(list2);
+
+</script>
+    
+</body>
+</html>
