@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+
+</head>
+<body class="container mt-5">
+
+<h1 id="hello" class="text-danger">Java Full Stack</h1>
+
+
+<script>
+
+document.getElementById("hello").className="text-success bg-dark p-2 text-center";
+
+document.getElementById("hello").classList.add("border", "border-5", "border-warning");
+document.getElementById("hello").classList.remove("bg-dark","border");
+document.getElementById("hello").classList.toggle("bg-warning");
+document.getElementById("hello").classList.toggle("bg-warning");
+let result1=document.getElementById("hello").classList.contains("text-danger");
+console.log(result1);
+
+
+</script>
+    
+</body>
+</html>

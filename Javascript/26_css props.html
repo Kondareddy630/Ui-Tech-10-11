@@ -9,6 +9,12 @@
             padding: 20px;
             box-shadow: 0px 0px 4px black;
         }
+
+        .hai{
+            color:red;
+            background-color: pink;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -20,15 +26,47 @@
 
 <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam nesciunt. Placeat harum earum voluptas fugiat provident deserunt facilis recusandae, totam illo quo. Molestias magnam quas quo consequuntur tempora quae.</p>
 
+
+<p id="hello">Good Morning</p>
+
+<p class="hai">hello</p>
+
+
+<p id="bye">Good Night!!!</p>
+
 <script>
 //style
 
-let p=document.getElementById("p1");
+// cssText
 
-let styles = getComputedStyle(p);
-console.log(styles.color);
-console.log(styles.backgroundColor);
-console.log(styles.padding);
+document.getElementById("bye").style.color="red";
+document.getElementById("bye").style.cssText=`color:blue;background-color:lightblue;padding:20px`;
+
+
+document.getElementById("hello").style.color="green";
+document.getElementById("hello").style.backgroundColor="lightgreen";
+document.getElementById("hello").style.padding="10px";
+
+let mycolor=document.getElementById("hello").style.color;
+console.log(mycolor);
+
+let bgcolor=document.getElementById("hello").style.backgroundColor;
+console.log(bgcolor);
+
+let getele=document.querySelector(".hai");
+let mystyle=getComputedStyle(getele);
+console.log(mystyle.color);
+console.log(mystyle.backgroundColor);
+
+//getComputed()
+
+
+
+
+let h2=document.getElementById("h2");
+// h2.style.cssText="color:blue;text-align:center";
+
+
 
 // let h1=document.getElementById("h1");
 // h1.style.color="red";
@@ -47,7 +85,7 @@ console.log(styles.padding);
 // document.getElementById("h2").style.color="blue";
 // document.getElementById("h2").style.backgroundColor="lightblue";
 // document.getElementById("h2").style.border="1px solid red";
-// document.getElementById("h2").style.boxShadow="0px 5px 4px   red";
+// document.getElementById("h2").style.boxShadow="0px 5px 4px red";
 </script>
     
 </body>

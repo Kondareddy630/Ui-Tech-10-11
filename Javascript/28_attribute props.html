@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+
+</head>
+<body class="container mt-5">
+
+
+<img src="../images/baby3.jpg" width="200px" height="200px" id="img1">
+
+
+<script>
+
+//getAttribute()
+let path=document.getElementById("img1").getAttribute("src");
+let width=document.getElementById("img1").getAttribute("width");
+let height=document.getElementById("img1").getAttribute("height");
+console.log(path);
+console.log(width);
+console.log(height);
+
+//setAttribute()
+
+document.getElementById("img1").setAttribute("alt","Image is not found!!");
+document.getElementById("img1").setAttribute("border","5px");
+
+//hasAttribute()
+
+let result1=document.getElementById("img1").hasAttribute("src");
+let result2=document.getElementById("img1").hasAttribute("title");
+console.log(result1);
+console.log(result2);
+
+//toggleAttribute()
+document.getElementById("img1").toggleAttribute("src");
+
+
+</script>
+    
+</body>
+</html>

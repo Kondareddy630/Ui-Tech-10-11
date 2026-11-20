@@ -1,19 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   
+ 
 </head>
 <body>
+
     
+
+<h1 id="h1">Hello Students</h1>
+
 
 <script>
 
+let employee = {
+    id: 101,
+    name: "Ramesh",
+
+    address: {
+        city: "Hyderabad",
+        state: "Telangana",
+        pincode: 500032
+    },
+
+    
+};
 
 
+function getKeys(obj) {
 
+    for (let key in obj) {
 
+        console.log(key);
+        console.log(obj[key])
+        
+
+        if (typeof obj[key] === "object" && obj[key] !== null) {
+            getKeys(obj[key]);
+            
+        }
+    }
+}
+
+getKeys(employee);
 
 </script>
-   
+    
 </body>
 </html>
